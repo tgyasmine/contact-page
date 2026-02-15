@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TGY Digital | Smart Moves</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+
+.container{
+max-width:800px;
+margin:auto;
+padding:40px 20px;
+}
+
+.logo{
+width:140px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#94a3b8;
+margin-bottom:30px;
+}
+
+button{
+padding:14px 20px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+margin:5px;
+}
+
+.lang-btn{
+background:#1e293b;
+color:white;
+}
+
+.lang-btn:hover{
+background:#334155;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:30px;
+}
+
+input, select, textarea{
+padding:12px;
+border-radius:6px;
+border:none;
+font-size:16px;
+}
+
+.submit-btn{
+background:#22c55e;
+color:white;
+font-size:18px;
+}
+
+.submit-btn:hover{
+background:#16a34a;
+}
+
+.social{
+margin-top:40px;
+}
+
+.social a{
+display:inline-block;
+margin:6px;
+padding:10px 14px;
+background:#1e293b;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+}
+
+.social a:hover{
+background:#334155;
+}
+
+.hidden{
+display:none;
+}
+</style>
+
+<script>
+function setLang(lang){
+document.getElementById("langSelect").style.display="none";
+document.getElementById("content").classList.remove("hidden");
+
+if(lang=="ar"){
+document.getElementById("title").innerHTML="نصنع لك نتائج حقيقية بإعلانات ذكية";
+document.getElementById("subtitle").innerHTML="نستهدف عملاء جاهزين للشراء ونرفع أرباحك بقرارات تسويقية مدروسة.";
+}
+if(lang=="en"){
+document.getElementById("title").innerHTML="We Build Real Results With Smart Advertising";
+document.getElementById("subtitle").innerHTML="We target ready-to-buy customers and scale your revenue strategically.";
+}
+if(lang=="fr"){
+document.getElementById("title").innerHTML="Nous Créons des Résultats Réels Grâce à des Publicités Intelligentes";
+document.getElementById("subtitle").innerHTML="Nous ciblons des clients prêts à acheter et augmentons vos revenus efficacement.";
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div id="langSelect">
+<img src="logo.png" class="logo">
+<h1>Choose Your Language</h1>
+<button class="lang-btn" onclick="setLang('ar')">العربية</button>
+<button class="lang-btn" onclick="setLang('en')">English</button>
+<button class="lang-btn" onclick="setLang('fr')">Français</button>
+</div>
+
+<div id="content" class="hidden">
+
+<img src="logo.png" class="logo">
+
+<h1 id="title"></h1>
+<p class="subtitle" id="subtitle"></p>
+
+<form action="https://formsubmit.co/tgydigital@gmail.com" method="POST">
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="email" name="Email" placeholder="Your Email" required>
+
+<select name="Service" required>
+<option value="">Service Needed</option>
+<option>Facebook Ads</option>
+<option>Instagram Ads</option>
+<option>TikTok Ads</option>
+<option>Full Funnel Strategy</option>
+</select>
+
+<select name="Budget">
+<option>Estimated Budget</option>
+<option>Less than 500$</option>
+<option>500$ - 2000$</option>
+<option>2000$ +</option>
+</select>
+
+<textarea name="Message" rows="4" placeholder="Describe your project"></textarea>
+
+<button type="submit" class="submit-btn">Submit Request</button>
+</form>
+
+<div class="social">
+<h3>Connect With Us</h3>
+
+<a href="https://wa.me/213773784472" target="_blank">WhatsApp</a>
+<a href="https://www.instagram.com/tgydigital" target="_blank">Instagram</a>
+<a href="https://www.facebook.com/share/1GVcETU21M/" target="_blank">Facebook</a>
+<a href="https://www.tiktok.com/@tgy.digital" target="_blank">TikTok</a>
+<a href="https://youtube.com/@tgydigital" target="_blank">YouTube</a>
+<a href="mailto:tgydigital@gmail.com">Email</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
